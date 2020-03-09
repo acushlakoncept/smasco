@@ -27,13 +27,17 @@ img#imgprev {
     left: calc(50rem - 42rem);
     top: calc(50rem - 40.5rem);
     width: calc(50rem - 30rem);
+    /* left: calc(100% - 20rem);
+    top: calc(100% + 2rem);
+    width: calc(100% - 12rem); */
 }
 
 img#mainimg {
     left: 0;
     top: 0;
     z-index: 1;
-    width: 50rem;
+    /* width: 50rem; */
+    max-width: 50rem;
 }
 
 #profilename,

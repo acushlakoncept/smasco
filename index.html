@@ -18,49 +18,54 @@
 
     <div class="container grey-text text-darken-1">
 
+        <div class="row">
+            <div class="col s12">
 
 
 
 
-        <form id="smascoform">
 
-            <div class="file-field input-field">
-                <div class="btn">
-                    <span>Upload Your Photo</span>
-                    <input type="file" accept="image/jpeg, image/png" name="profileimg" id="profileimg">
+                <form id="smascoform">
+
+                    <div class="file-field input-field">
+                        <div class="btn">
+                            <span>Upload Your Photo</span>
+                            <input type="file" accept="image/jpeg, image/png" name="profileimg" id="profileimg" data->
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text">
+                        </div>
+                    </div>
+
+
+                    <div class="input-field">
+                        <input type="text" name="name" id="name" placeholder="Enter Full Name">
+                        <label for="name"></label>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="text" name="grad" id="grad" placeholder="Graduation Year">
+                        <label for="grad"></label>
+                    </div>
+
+                </form>
+
+                <div class="preview__block section">
+                    <button class="btn-large" id="btnConvertHTML" href="#">Download</button>
+                    <!-- <a onclick="screenshot();" href="#">Screenshot</a> -->
+
                 </div>
-                <div class="file-path-wrapper">
-                    <input class="file-path validate" type="text">
+
+                <div class="profilecanva row" id="exportarea">
+                    <img src="img/sma.png" id="mainimg" alt="">
+                    <img id="imgprev" src="img/acushla.png" alt="" />
+                    <p id="profilename">Uduak Essien</p>
+                    <p id="classof">Smasco Class of <span class="year">2000</span></p>
+
                 </div>
+
             </div>
-
-
-            <div class="input-field">
-                <input type="text" name="name" id="name" placeholder="Enter Full Name">
-                <label for="name"></label>
-            </div>
-
-            <div class="input-field">
-                <input type="text" name="grad" id="grad" placeholder="Graduation Year">
-                <label for="grad"></label>
-            </div>
-
-        </form>
-
-        <div class="preview__block section">
-            <button class="btn-large" id="btnConvertHTML" href="#">Download</button>
-            <!-- <a onclick="screenshot();" href="#">Screenshot</a> -->
-
         </div>
-
-        <div class="profilecanva row" id="exportarea">
-            <img src="img/sma.png" id="mainimg" alt="">
-            <img id="imgprev" src="img/acushla.png" alt="" />
-            <p id="profilename">Uduak Essien</p>
-            <p id="classof">Smasco Class of <span class="year">2000</span></p>
-
-        </div>
-
 
     </div>
 
