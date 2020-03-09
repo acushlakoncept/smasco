@@ -6,6 +6,7 @@
 .profilecanva {
     position: relative;
     width: 100%;
+    margin: 0 auto;
 }
 
 #profilename,
@@ -15,16 +16,24 @@ img#mainimg {
     position: absolute;
 }
 
-img#imgprev {
+
+/* img#imgprev {
     left: 7.5rem;
     top: 9rem;
     width: 21rem;
+} */
+
+img#imgprev {
+    left: calc(50rem - 42rem);
+    top: calc(50rem - 40.5rem);
+    width: calc(50rem - 30rem);
 }
 
 img#mainimg {
     left: 0;
     top: 0;
     z-index: 1;
+    width: 50rem;
 }
 
 #profilename,
@@ -35,8 +44,8 @@ img#mainimg {
     font-weight: 700;
     color: #13422e;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
-    width: 290px;
-    left: 34.4rem;
+    width: calc(50rem - 35rem);
+    left: calc(50rem - 15.5rem);
 }
 
 p#profilename {
