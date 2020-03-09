@@ -1,0 +1,48 @@
+/* #imgprev {
+    width: 600px;
+    height: auto;
+} */
+
+.profilecanva {
+    position: relative;
+    width: 100%;
+}
+
+#profilename,
+#classof,
+img#imgprev,
+img#mainimg {
+    position: absolute;
+}
+
+img#imgprev {
+    left: 7.5rem;
+    top: 9rem;
+    width: 21rem;
+}
+
+img#mainimg {
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#profilename,
+#classof {
+    z-index: 2;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #13422e;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    width: 290px;
+    left: 34.4rem;
+}
+
+p#profilename {
+    top: 16.7rem;
+}
+
+p#classof {
+    top: 22.9rem;
+}

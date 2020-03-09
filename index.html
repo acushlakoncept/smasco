@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMASCO ALUMNI CONVENTION</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="html2canvas.js"></script>
+</head>
+
+<body>
+
+
+    <div class="preview__block">
+        <a id="btnConvertHTML" href="#">Download</a>
+        <a onclick="screenshot();" href="#">Screenshot</a>
+
+    </div>
+
+
+
+    <form id="smascoform">
+        <input type="file" accept="image/jpeg, image/png" name="profileimg" id="profileimg">
+        <input type="text" name="name" id="name">
+        <input type="text" id="grad" name="grad">
+        <input type="submit" id="submitbtn">
+    </form>
+
+    <div class="profilecanva" id="exportarea">
+        <img src="sma.png" id="mainimg" alt="">
+        <img id="imgprev" src="acushla.png" alt="" />
+        <p id="profilename">Uduak Essien</p>
+        <p id="classof">Smasco Class of <span class="year">2003</span></p>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+    <!-- <script src="jquery.min.js"></script>  -->
+    <script>
+        function screenshot() {
+            html2canvas(document.getElementById("exportarea"), {
+                backgroundColor: null
+            }).then(function(canvas) {
+
+                document.querySelector('.preview__block').appendChild(canvas);
+                console.log(canvas);
+            });
+        }
+    </script>
+
+
+
+</body>
+
+</html>
