@@ -3,7 +3,7 @@ const nameInput = document.getElementById('name');
 const yearInput = document.getElementById('grad');
 
 const imgPrev = document.getElementById('imgprev');
-const classof = document.querySelector('.year');
+const classof = document.getElementById('classof');
 const profileName = document.getElementById('profilename');
 
 const saveImg = document.getElementById('btnConvertHTML');
@@ -20,7 +20,7 @@ nameInput.addEventListener('keyup', (event) => {
 })
 
 yearInput.addEventListener('keyup', (event) => {
-    classof.textContent = event.target.value;
+    classof.textContent = `SMASCO CLASS OF ${ event.target.value}`;
 })
 
 let getCanvas;
@@ -47,14 +47,14 @@ saveImg.addEventListener('click', event => {
         width: 800,
         height: 687
     }).then(result => {
-        let img = result.toDataURL("image/png");
+        let img = result.toDataURL("image/jpeg");
         // let newData = img.replace(/^data:image\/png/, "data:application/octet-stream");
-        let newData = img.replace('image/png', "image/octet-stream");
+        let newData = img.replace('image/jpeg', "image/octet-stream");
         // savePng(img);
 
         let a = document.createElement('a');
         a.href = newData;
-        a.download = 'smasco_pro.png';
+        a.download = 'smasco_pro.jpeg';
         a.click();
     });
 })
