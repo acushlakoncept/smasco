@@ -43,9 +43,7 @@ saveImg.addEventListener('click', event => {
         logging: true,
         letterRendering: 1,
         allowTaint: true,
-        useCORS: true,
-        width: 600,
-        height: 515
+        useCORS: true
     }).then(result => {
         let img = result.toDataURL("image/jpeg");
         // let newData = img.replace(/^data:image\/png/, "data:application/octet-stream");

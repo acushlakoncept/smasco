@@ -5,7 +5,8 @@
 
 .profilecanva {
     position: relative;
-    width: 100%;
+    width: 600px;
+    height: 515px;
     margin: 0 auto;
 }
 
@@ -56,4 +57,8 @@ p#profilename {
 
 p#classof {
     top: 17rem;
+}
+
+.space {
+    height: 40px;
 }
