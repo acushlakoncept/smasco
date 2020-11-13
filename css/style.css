@@ -5,9 +5,12 @@
 
 .profilecanva {
     position: relative;
-    width: 600px;
-    height: 515px;
+    width: 500px;
+    height: 397px;
     margin: 0 auto;
+    overflow: hidden;
+    /* background: url(../img/sma2.png) no-repeat;
+    background-size: cover; */
 }
 
 #profilename,
@@ -25,9 +28,10 @@ img#mainimg {
 } */
 
 img#imgprev {
-    left: calc(37.5rem - 31.5rem);
-    top: calc(37.5rem - 30.38rem);
+    left: 50%;
+    top: 46%;
     width: calc(37.5rem - 22.5rem);
+    transform: translate(-50%, -22%);
 }
 
 img#mainimg {
@@ -35,28 +39,30 @@ img#mainimg {
     top: 0;
     z-index: 1;
     /* width: 37.5rem; */
-    max-width: 37.5rem;
+    width: 100%;
 }
 
 #profilename,
 #classof {
     z-index: 2;
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: #13422e;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6rem;
-    width: calc(37.5rem - 25rem);
-    left: calc(37.5rem - 11.63rem);
 }
 
 p#profilename {
-    top: 12.3rem;
+    top: 5.3rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 p#classof {
-    top: 17rem;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .space {
